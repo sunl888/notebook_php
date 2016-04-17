@@ -23,4 +23,15 @@ class UserInfoModel extends Model{
     public function getUsersInfoID($usersID){
         return  $this->where(['uid'=>$usersID])->find();
     }
+    /**
+         * 读取图片路径
+         * 删除文件
+         * 删除表中图片字段
+    */
+    public function delUserPictureById($id){
+ 
+        $userPictureName = $this->where(['id'=>$id])->limit(1)->find();
+        unlink(UPLOAD_PATH.$userPictureName['image']);//UPLOAD_PATH是index中定义的路径
+        return $this->where(['id'=>$id])->save(['image'=>'']);
+    }
 }

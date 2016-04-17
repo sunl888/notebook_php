@@ -13,10 +13,11 @@ return array(
 	'DB_CHARSET' => 'utf8', // 数据库字符编码
 	'DB_TYPE' => 'mysql', // 数据库类型
 	'DB_HOST' => 'localhost', // 主机名称
-	'DB_NAME' => 'jsjkxyjs', // 数据库名称
+	//'DB_NAME' => 'jsjkxyjs', // 数据库名称
+        'DB_NAME' => 'notebook',
 	'DB_USER' => 'root', // 数据库管理员用户名
 	'DB_PWD' => '', // 数据库管理员密码
-	'DB_PREFIX' => 'jsjkxyjs_', // 数据库前缀
+	'DB_PREFIX' => 'notebook_', // 数据库前缀
 
 		
 	'TOKEN_ON' => False, // 是否开启令牌验证 默认关闭

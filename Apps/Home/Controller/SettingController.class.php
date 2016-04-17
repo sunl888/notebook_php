@@ -1,15 +1,8 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace Home\Controller;
 use Think\Controller;
 /**
- * Description of SettingController
  *
  * @author 土豆
  */
@@ -45,8 +38,10 @@ class SettingController extends BaseController{
         $address = I('post.address','','trim');
         $about = I('post.about','','trim');
         $usersmess = $users->getUserByUsername(Session('userName'));
-        $uid = $usersmess['id'];
+        $uid = $usersmess['id'];//users表的id
         $usersinfoID = $usersinfo->getUsersInfoID($uid);
+        
+        $delUsersPicture = $usersinfo->delUserPictureById($usersinfoID['id']);
         
         //$usersinfoID['id'] userinfo表的id
         $isSave = $usersinfo->write($qq,$phone,$address,$about, $usersinfoID['id'] ,$fileName);
