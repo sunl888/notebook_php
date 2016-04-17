@@ -1,0 +1,60 @@
+[ 2016-04-11T10:43:12+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1064:Erreur de syntaxe près de 'WHERE `id` = 1' à la ligne 1
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET  WHERE `id` = 1
+
+[ 2016-04-11T10:46:45+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1064:Erreur de syntaxe près de 'WHERE `id` = 1' à la ligne 1
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET  WHERE `id` = 1
+
+[ 2016-04-11T10:48:28+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1064:Erreur de syntaxe près de 'WHERE `id` = 1' à la ligne 1
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET  WHERE `id` = 1
+
+[ 2016-04-11T10:48:33+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1064:Erreur de syntaxe près de 'WHERE `id` = 1' à la ligne 1
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET  WHERE `id` = 1
+
+[ 2016-04-11T10:49:25+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1064:Erreur de syntaxe près de 'WHERE `id` = 1' à la ligne 1
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET  WHERE `id` = 1
+
+[ 2016-04-11T10:57:33+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1064:Erreur de syntaxe près de 'WHERE ( id = $id )' à la ligne 1
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET  WHERE ( id = $id )
+
+[ 2016-04-11T10:59:39+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ '$id' inconnu dans where clause
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET `lastloginIP`='0' WHERE ( id = $id )
+
+[ 2016-04-11T10:59:47+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ '$id' inconnu dans where clause
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET `lastloginIP`='0' WHERE ( id = $id )
+
+[ 2016-04-11T11:01:43+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ '$id' inconnu dans where clause
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET `lastloginIP`='0' WHERE ( id = $id )
+
+[ 2016-04-11T11:01:49+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ '$id' inconnu dans where clause
+ [ SQL语句 ] : UPDATE `jsjkxyjs_account` SET `lastloginIP`='0' WHERE ( id = $id )
+
+[ 2016-04-11T16:06:19+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ 'admin' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `jsjkxyjs_account` WHERE ( username = admin ) LIMIT 1  
+
+[ 2016-04-11T16:06:44+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ 'admin' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `jsjkxyjs_account` WHERE ( username = admin ) LIMIT 1  
+
+[ 2016-04-11T16:08:07+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ 'admin' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `jsjkxyjs_account` WHERE ( username = admin ) LIMIT 1  
+
+[ 2016-04-11T16:08:11+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+ERR: 1054:Champ 'admin' inconnu dans where clause
+ [ SQL语句 ] : SELECT * FROM `jsjkxyjs_account` WHERE ( username = admin ) LIMIT 1  
+
+[ 2016-04-11T19:57:07+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_account' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_account`
+

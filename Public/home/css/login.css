@@ -1,0 +1,44 @@
+.bg{
+	width:100%;
+	height:678px;
+	background:#adc394;
+}
+.form{
+	width:399px;
+	height:282px;
+	background:url(../img/yun_5.jpg);
+	line-height:inherit;
+	padding-top:100px;
+	padding-left:50px;
+	margin:0 auto;
+}
+.form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+.zh{
+	width:399px;
+	height:34px;
+	background:url(../img/yun_7.jpg);
+	margin:auto;
+}
+.dl{
+	width:399px;
+	height:107px;
+	background:url(../img/yun_9.jpg);
+	margin:auto;
+}
+.dl input{
+	width:70px;
+	height:90px;
+	background:#FFF;
+	font-size:30px;
+	border-radius:50%;
+	margin-left:155px;
+	margin-top:15px;
+}
+.dl input:hover{
+    color:#67b168;
+}

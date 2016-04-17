@@ -1,0 +1,9 @@
+[ 2016-04-10T14:55:03+08:00 ] ::1 /notebook_php/index.php/Login/%3Cscript%3Ealert('%E8%AF%A5%E5%8A%9F%E8%83%BD%E6%9A%82%E6%97%B6%E6%9C%AA%E5%AE%9E%E7%8E%B0');%3C/script%3E
+ERR: 非法操作:alert('该功能暂时未实现');
+
+[ 2016-04-10T20:03:33+08:00 ] ::1 /notebook_php/index.php/Register/public.css
+ERR: 非法操作:public.css
+
+[ 2016-04-10T20:03:33+08:00 ] ::1 /notebook_php/index.php/Register/zc.js
+ERR: 非法操作:zc.js
+

@@ -1,0 +1,40 @@
+[ 2016-04-12T20:30:20+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_user_info' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_user_info`
+
+[ 2016-04-12T20:34:34+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_user_info' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_user_info`
+
+[ 2016-04-12T20:38:15+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_user_info' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_user_info`
+
+[ 2016-04-12T20:38:39+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_user_info' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_user_info`
+
+[ 2016-04-12T20:38:49+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_user_info' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_user_info`
+
+[ 2016-04-12T20:43:07+08:00 ] ::1 /notebook_php/index.php/Register/doregister.htm
+ERR: 1146:La table 'jsjkxyjs.jsjkxyjs_user_info' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `jsjkxyjs_user_info`
+
+[ 2016-04-12T20:48:08+08:00 ] ::1 /notebook_php/index.php/Register/doRegister.htm
+ERR: 1048:Le champ 'uid' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `jsjkxyjs_usersinfo` (`qq`,`address`,`about`,`uid`,`image`) VALUES ('2013855675','安徽省桐城市','未来的IT精英',NULL,'2016/04/12/570cee881df35.jpeg')
+
+[ 2016-04-12T21:14:54+08:00 ] ::1 /notebook_php/index.php/Register/Login/index
+ERR: 非法操作:Login
+
+[ 2016-04-12T21:17:18+08:00 ] ::1 /notebook_php/index.php/Register/Login/index
+ERR: 非法操作:Login
+
+[ 2016-04-12T21:17:20+08:00 ] ::1 /notebook_php/index.php/Register/Login/index
+ERR: 非法操作:Login
+
+[ 2016-04-12T21:17:24+08:00 ] ::1 /notebook_php/index.php/Register/Login/index
+ERR: 非法操作:Login
+

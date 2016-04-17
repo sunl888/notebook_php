@@ -1,0 +1,22 @@
+﻿/**
+*公共的css样式
+**/
+*{
+    margin:0;
+    padding:0;
+    font-family:"微软雅黑";/*字体全部设置为微软雅黑*/
+    outline: none;/*不显示文本框获得焦点时的边框*/
+    font-size: 18px;/*字号默认18px*/
+    border:none;/*默认无边框*/
+    color:#6C9;/*默认字体颜色*/
+}
+input[type=text],input[type=password]{
+    border:1px solid #ccc;  /*文本框边框样式*/
+}
+a{
+    color:#6c9;
+}
+a:hover{
+    color:#67b168;
+    text-decoration: none;
+}

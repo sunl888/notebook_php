@@ -1,0 +1,1 @@
+a:9:{i:0;s:3:"vid";i:1;s:2:"ip";i:2;s:4:"time";i:3;s:4:"view";i:4;s:1:"y";i:5;s:1:"m";i:6;s:1:"d";s:3:"_pk";s:3:"vid";s:5:"_type";a:7:{s:3:"vid";s:17:"int(255) unsigned";s:2:"ip";s:12:"varchar(255)";s:4:"time";s:7:"int(11)";s:4:"view";s:7:"int(11)";s:1:"y";s:7:"int(11)";s:1:"m";s:7:"int(11)";s:1:"d";s:7:"int(11)";}}

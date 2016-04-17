@@ -1,0 +1,15 @@
+[ 2016-04-13T20:53:02+08:00 ] ::1 /notebook_php/index.php/Register/Register.htm
+ERR: 非法操作:Register
+
+[ 2016-04-13T20:53:11+08:00 ] ::1 /notebook_php/index.php/Register/Register.htm
+ERR: 非法操作:Register
+
+[ 2016-04-13T21:30:06+08:00 ] ::1 /notebook_php/index.php/Setting/index
+ERR: 无法加载控制器:Setting
+
+[ 2016-04-13T21:31:07+08:00 ] ::1 /notebook_php/index.php/Setting/index
+ERR: 无法加载控制器:Setting
+
+[ 2016-04-13T21:31:08+08:00 ] ::1 /notebook_php/index.php/Setting/index
+ERR: 无法加载控制器:Setting
+
