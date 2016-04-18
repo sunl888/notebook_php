@@ -3,15 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>E8CMS管理系统</title>
-<link type="text/css" href="/notebook_php/Public/e8admin/default/css/login.css" rel="stylesheet" />
-<link type="text/css" href="/notebook_php/Public/e8admin/default/css/login-com.css" rel="stylesheet" />
+<link type="text/css" href="/notebook_php/Public/admin/default/css/login.css" rel="stylesheet" />
+<link type="text/css" href="/notebook_php/Public/admin/default/css/login-com.css" rel="stylesheet" />
 </head>
 
 <body>
 
 	<div class="login">
     	<div class="l-info">
-        	<img src="/notebook_php/Public/e8admin/default/img/login-sign.png" />
+        	<img src="/notebook_php/Public/admin/default/img/login-sign.png" />
             <p>
             	欢迎使用E8网络后台管理系统！本系统由<a href="<?php echo ($syscon['E8_WEB_URL']); ?>"> E8网络工作室 </a>研发，E8工作室专注于网站建设、移动平台应用开发、企业级桌面系统开发等！
             </p>

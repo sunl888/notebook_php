@@ -53,7 +53,7 @@
                     <input type="file" name="face" onchange="previewImage(this)" class="input"  accept="jpg,gif,bmp,png,jpeg" >
                     <div class="mask"></div>
                     <div id="preview">
-                                 <img id="imghead" src="/notebook_php/Public/home/img/default_face.jpg" width="200" height="200" border="0">
+                        <img id="imghead" src="/notebook_php/Public/home/img/default_face.jpg" border="0">
                     </div>
                </div>
                <!--输入框-->

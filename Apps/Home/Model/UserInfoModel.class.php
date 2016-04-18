@@ -14,7 +14,10 @@ class UserInfoModel extends Model{
     public function write($qq,$phone,$address,$about,$uid,$image){
          return $this->where(['uid'=>$uid])->save(['qq'=>$qq,'phone'=>$phone,'address'=>$address,'about'=>$about,'image'=>$image]);
     }
-    
+    //通过uid获取用户所有信息
+    public function getUsersinfo($uid){
+        return $this->where(['uid'=>$uid])->limit(1)->find();
+    }
     //为新注册的帐户添加一张照片
     public function addImage($uid,$image){
         return $this->add(['uid'=>$uid,'image'=>$image]);

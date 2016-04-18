@@ -36,8 +36,8 @@
                                  <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">写日记</a></li>
                            </ul>
                           <ul class="nav navbar-nav navbar-right">
-                               <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">注册</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">设置</a></li>
+                               <li><a href="<?php echo U('Register/index');?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">注册</a></li>
+                                <li><a href="<?php echo U('Setting/index');?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">设置</a></li>
                                 <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">退出</a></li>
                           </ul>
                         </nav>
@@ -52,7 +52,7 @@
                     <input type="file" name="face" onchange="previewImage(this)" class="input"  accept="jpg,gif,bmp,png,jpeg" >
                     <div class="mask"></div>
                     <div id="preview">
-                                 <img id="imghead" src="/notebook_php/Public/home/img/default_face.jpg" width="200" height="200" border="0">
+                        <img id="imghead" src="/notebook_php/Public/home/img/default_face.jpg" border="0">
                     </div>
                </div>
                <!--输入框-->

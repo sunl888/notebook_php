@@ -18,10 +18,13 @@ hr{
 	border-radius:50%;
 	overflow: hidden;
 	position:relative;
-	}
-	#imghead{
-	width:200px;
-	height:200px;
+	text-align:center;
+}
+#imghead{
+	width: 200px!important;
+    height: auto!important;
+	margin-left: 0!important;
+	margin-top: 0!important;
 }
 #preview p{
 	line-height:200px;

@@ -36,8 +36,8 @@
                                  <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">写日记</a></li>
                            </ul>
                           <ul class="nav navbar-nav navbar-right">
-                               <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">注册</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">设置</a></li>
+                               <li><a href="{:U('Register/index')}" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">注册</a></li>
+                                <li><a href="{:U('Setting/index')}" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">设置</a></li>
                                 <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">退出</a></li>
                           </ul>
                         </nav>
@@ -52,7 +52,7 @@
                     <input type="file" name="face" onchange="previewImage(this)" class="input"  accept="jpg,gif,bmp,png,jpeg" >
                     <div class="mask"></div>
                     <div id="preview">
-                                 <img id="imghead" src="__PUBLIC__/home/img/default_face.jpg" width="200" height="200" border="0">
+                        <img id="imghead" src="__ROOT__/{$image}" border="0">
                     </div>
                </div>
                <!--输入框-->
@@ -60,22 +60,22 @@
                         
                         <label class="col-sm-3 control-label">QQ号码:</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" name="qq" placeholder="QQ号码" >
+                          <input type="text" class="form-control" value="{$qq}"name="qq" placeholder="QQ号码" >
                         </div> <br/><br/>
-                        
+                     
                         <label class="col-sm-3 control-label">联系电话:</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" name="phone" placeholder="联系电话">
+                          <input type="text" class="form-control" value="{$phone}" name="phone" placeholder="联系电话">
                         </div> <br/><br/>
                         
                         <label class="col-sm-3 control-label">住址:</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" name="address" placeholder="现住地址">
+                          <input type="text" class="form-control" value="{$address}" name="address" placeholder="现住地址">
                         </div><br/><br/>
                         
                         <label class="col-sm-3 control-label">个人简介:</label>
                         <div class="col-sm-9">
-                          <textarea class="form-control" id="about" name = "about" placeholder="这里随便输入一句你想说的话喔" rows="3"></textarea>
+                          <textarea class="form-control" id="about" name="about" placeholder="这里随便输入一句你想说的话喔" rows="3">{$about}</textarea>
                         </div> <br/><br/>
                         
                         <!--submit-->

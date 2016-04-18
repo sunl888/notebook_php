@@ -10,6 +10,18 @@ class SettingController extends BaseController{
     public function index()
     {
         if($this->isLogin()){
+            //读取用户信息
+            $users = D('User');
+            $usersinfo = D('UserInfo');
+            $usersmess = $users->getUserByUsername(Session('userName'));
+            $uid = $usersmess['id'];//users表的id
+            $usersAllInfo = $usersinfo->getUsersinfo($uid);
+            //p($usersAllInfo);
+            $this->assign('image',UPLOAD_PATH.$usersAllInfo['image']);
+            $this->assign('qq',$usersAllInfo['qq']);
+            $this->assign('phone',$usersAllInfo['phone']);
+            $this->assign('address',$usersAllInfo['address']);
+            $this->assign('about',$usersAllInfo['about']);
             $this->display();//显示设置界面
         }
     }

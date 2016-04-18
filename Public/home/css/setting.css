@@ -14,7 +14,7 @@ h3{
 	margin-left: 14px;
 }
 hr{
-	    margin-left: 15px;
+	margin-left: 15px;
 }
 #preview{
 	width:200px;
@@ -23,15 +23,14 @@ hr{
 	border-radius:50%;
 	overflow: hidden;
 	position:relative;
-	}
-	#imghead{
-	width:200px;
-	height:200px;
+	text-align:center;
 }
-#preview p{
-	line-height:200px;
-	color:#FFF;}	
-
+#imghead{
+	width: 200px!important;
+    height: auto!important;
+	margin-left: 0!important;
+	margin-top: 0!important;
+}
 #zc{
 	width:250px;
 	height:200px;
