@@ -1,0 +1,126 @@
+[ 2016-04-19T18:20:27+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: 无法加载控制器:Logout
+
+[ 2016-04-19T18:20:31+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: 无法加载控制器:Logout
+
+[ 2016-04-19T18:20:45+08:00 ] ::1 /notebook_php/index.php/Write/index.htm
+ERR: 无法加载控制器:Write
+
+[ 2016-04-19T18:20:47+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 无法加载控制器:Find
+
+[ 2016-04-19T18:30:26+08:00 ] ::1 /notebook_php/index.php/Write/index.htm
+ERR: 无法加载控制器:Write
+
+[ 2016-04-19T18:30:29+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 无法加载控制器:Find
+
+[ 2016-04-19T18:30:40+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: 无法加载控制器:Logout
+
+[ 2016-04-19T18:37:49+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: 无法加载控制器:Logout
+
+[ 2016-04-19T18:39:20+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: Think\Controller:session方法不存在！
+
+[ 2016-04-19T18:39:30+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: Think\Controller:rediract方法不存在！
+
+[ 2016-04-19T18:39:31+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: Think\Controller:rediract方法不存在！
+
+[ 2016-04-19T18:39:31+08:00 ] ::1 /notebook_php/index.php/Logout/index.htm
+ERR: Think\Controller:rediract方法不存在！
+
+[ 2016-04-19T18:42:25+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 无法加载控制器:Find
+
+[ 2016-04-19T18:42:29+08:00 ] ::1 /notebook_php/index.php/Write/index.htm
+ERR: 无法加载控制器:Write
+
+[ 2016-04-19T18:42:40+08:00 ] ::1 /notebook_php/index.php/Write/index.htm
+ERR: 无法加载控制器:Write
+
+[ 2016-04-19T18:42:45+08:00 ] ::1 /notebook_php/index.php/Write/index.htm
+ERR: 无法加载控制器:Write
+
+[ 2016-04-19T18:42:50+08:00 ] ::1 /notebook_php/index.php/MyBook/index.htm
+ERR: 无法加载控制器:MyBook
+
+[ 2016-04-19T18:44:12+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 无法加载控制器:Find
+
+[ 2016-04-19T18:44:14+08:00 ] ::1 /notebook_php/index.php/Write/index.htm
+ERR: 无法加载控制器:Write
+
+[ 2016-04-19T18:48:09+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 无法加载控制器:Find
+
+[ 2016-04-19T20:55:27+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 模板不存在:./Apps/Home/View/Find/index.html
+
+[ 2016-04-19T21:45:01+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: Think\Controller:getLastSql方法不存在！
+
+[ 2016-04-19T21:53:50+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 模板不存在:./Apps/Home/View/Find/index.html
+
+[ 2016-04-19T21:53:55+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:14:50+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:20:56+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:21:15+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:21:54+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:22:00+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:22:13+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:22:13+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:22:14+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:22:21+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on b.uid = u.id right join usersinfo as ui on u.id = ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:26:50+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 模板不存在:./Apps/Home/View/Find/index.html
+
+[ 2016-04-19T22:26:55+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: Think\Model:on方法不存在！
+
+[ 2016-04-19T22:27:58+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1064:Erreur de syntaxe près de 'WHERE b.hidden = 1 ORDER BY b.addtime desc' à la ligne 1
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u right join usersinfo as ui on u.id = b.uid and u.id=ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:31:01+08:00 ] ::1 /notebook_php/index.php/index/index.htm
+ERR: 1146:La table 'notebook.usersinfo' n'existe pas
+ [ SQL语句 ] : SELECT b.id,b.title,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 1 ORDER BY b.addtime desc 
+
+[ 2016-04-19T22:37:21+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 模板不存在:./Apps/Home/View/Find/index.html
+

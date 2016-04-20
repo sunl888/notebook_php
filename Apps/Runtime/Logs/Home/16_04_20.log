@@ -1,0 +1,24 @@
+[ 2016-04-20T13:46:44+08:00 ] ::1 /notebook_php/index.php/Write/index
+ERR: 无法加载控制器:Write
+
+[ 2016-04-20T15:55:14+08:00 ] ::1 /notebook_php/index.php/List/dofind/id/2.htm
+ERR: 模板不存在:./Apps/Home/View/List/dofind.html
+
+[ 2016-04-20T15:56:24+08:00 ] ::1 /notebook_php/index.php/List/dofind/id/2.htm
+ERR: 非法操作:dofind
+
+[ 2016-04-20T16:11:00+08:00 ] ::1 /notebook_php/index.php/MyBook/index.htm
+ERR: 无法加载控制器:MyBook
+
+[ 2016-04-20T17:30:17+08:00 ] ::1 /notebook_php/index.php/MyBook/index.htm
+ERR: 无法加载控制器:MyBook
+
+[ 2016-04-20T17:30:41+08:00 ] ::1 /notebook_php/index.php/MyBook/index.htm
+ERR: 无法加载控制器:MyBook
+
+[ 2016-04-20T17:30:46+08:00 ] ::1 /notebook_php/index.php/MyBooks/index.htm
+ERR: 无法加载控制器:MyBooks
+
+[ 2016-04-20T18:29:44+08:00 ] ::1 /notebook_php/index.php/Registe/index.htm
+ERR: 无法加载控制器:Registe
+
