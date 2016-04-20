@@ -32,20 +32,20 @@
                         </div>
                         <nav id="bs-navbar" class="collapse navbar-collapse">
                           <ul class="nav navbar-nav">
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">首页</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">发现</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">写日记</a></li>
+                                <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li><a href="<?php echo U('Find/index');?>">发现</a></li>
+                                <li><a href="<?php echo U('Write/index');?>">写日记</a></li>
                            </ul>
                           <ul class="nav navbar-nav navbar-right">
-                               <li><a href="<?php echo U('Register/index');?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">注册</a></li>
-                                <li><a href="<?php echo U('Setting/index');?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">设置</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">退出</a></li>
+                               <li><a href="<?php echo U('Register/index');?>">注册</a></li>
+                                <li><a href="<?php echo U('Setting/index');?>">设置</a></li>
+                                <li><a href="<?php echo U('Logout/index');?>">退出</a></li>
                           </ul>
                         </nav>
                   </div>
             </header>
             <!--content-->
-			<h3>注册账号</h3>
+            <h3>注册账号</h3>
             <hr/>
             <form action="<?php echo U('Register/doRegister');?>" method="POST" name="form"  enctype="multipart/form-data">
                     <!--上传图像控件-->

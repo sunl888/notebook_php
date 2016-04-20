@@ -537,6 +537,7 @@ class Model {
             $options            =  array();
             // 分析表达式
             $options            =  $this->_parseOptions($options);
+            
             return  '( '.$this->fetchSql(true)->select($options).' )';
         }
         // 分析表达式
@@ -549,7 +550,8 @@ class Model {
             if(false !== $data){
                 return $data;
             }
-        }        
+        }
+        
         $resultSet  = $this->db->select($options);
         if(false === $resultSet) {
             return false;

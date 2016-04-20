@@ -19,8 +19,9 @@ class UserInfoModel extends Model{
         return $this->where(['uid'=>$uid])->limit(1)->find();
     }
     //为新注册的帐户添加一张照片
+    //添加注册时间
     public function addImage($uid,$image){
-        return $this->add(['uid'=>$uid,'image'=>$image]);
+        return $this->add(['uid'=>$uid,'image'=>$image,'regtime'=>time()]);
     }
     //通过users表的id来找到对应usersinfo表的id
     public function getUsersInfoID($usersID){

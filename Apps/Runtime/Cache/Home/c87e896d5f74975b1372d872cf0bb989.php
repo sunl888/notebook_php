@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="container">
-                <!--Native-->
+            <!--Native-->
             <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
                 <div class="container">
                         <div class="navbar-header">
@@ -31,14 +31,14 @@
                         </div>
                         <nav id="bs-navbar" class="collapse navbar-collapse">
                           <ul class="nav navbar-nav">
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">首页</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">发现</a></li>
-                                 <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">写日记</a></li>
+                                <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+                                <li><a href="<?php echo U('Find/index');?>">发现</a></li>
+                                <li><a href="<?php echo U('Write/index');?>">写日记</a></li>
                            </ul>
                           <ul class="nav navbar-nav navbar-right">
-                               <li><a href="<?php echo U('Register/index');?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">注册</a></li>
-                                <li><a href="<?php echo U('Setting/index');?>" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">设置</a></li>
-                                <li><a href="#" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click'])">退出</a></li>
+                               <li><a href="<?php echo U('Register/index');?>">注册</a></li>
+                                <li><a href="<?php echo U('Setting/index');?>">设置</a></li>
+                                <li><a href="<?php echo U('Logout/index');?>">退出</a></li>
                           </ul>
                         </nav>
                   </div>
@@ -52,32 +52,27 @@
                     <input type="file" name="face" onchange="previewImage(this)" class="input"  accept="jpg,gif,bmp,png,jpeg" >
                     <div class="mask"></div>
                     <div id="preview">
-                        <img id="imghead" src="/notebook_php/Public/home/img/default_face.jpg" border="0">
+                        <img id="imghead" src="/notebook_php/<?php echo ($image); ?>" border="0">
                     </div>
                </div>
                <!--输入框-->
                 <div class="form-group">
-                        
                         <label class="col-sm-3 control-label">QQ号码:</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" name="qq" placeholder="QQ号码" >
+                          <input type="text" class="form-control" value="<?php echo ($qq); ?>"name="qq" placeholder="QQ号码" >
                         </div> <br/><br/>
-                        
                         <label class="col-sm-3 control-label">联系电话:</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" name="phone" placeholder="联系电话">
+                          <input type="text" class="form-control" value="<?php echo ($phone); ?>" name="phone" placeholder="联系电话">
                         </div> <br/><br/>
-                        
                         <label class="col-sm-3 control-label">住址:</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" name="address" placeholder="现住地址">
+                          <input type="text" class="form-control" value="<?php echo ($address); ?>" name="address" placeholder="现住地址">
                         </div><br/><br/>
-                        
                         <label class="col-sm-3 control-label">个人简介:</label>
                         <div class="col-sm-9">
-                          <textarea class="form-control" id="about" name = "about" placeholder="这里随便输入一句你想说的话喔" rows="3"></textarea>
+                          <textarea class="form-control" id="about" name="about" placeholder="这里随便输入一句你想说的话喔" rows="3"><?php echo ($about); ?></textarea>
                         </div> <br/><br/>
-                        
                         <!--submit-->
                         <button type="submit" class="btn btn-primary" onclick="return check();" >修改我的信息</button>
                 </div>
