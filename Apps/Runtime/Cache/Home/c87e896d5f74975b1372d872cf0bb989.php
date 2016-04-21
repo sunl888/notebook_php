@@ -74,9 +74,7 @@
                           <textarea class="form-control" id="about" name="about" placeholder="这里随便输入一句你想说的话喔" rows="3"><?php echo ($about); ?></textarea>
                         </div> <br/><br/>
                         
-                        <div class="control-group">
-      <label class="inline"><input name="checkbox" type="checkbox" checked="checked" />只有自己可见</label>
-    </div>
+                        
                         
                         <!--submit-->
                         <button type="submit" class="btn btn-primary" onclick="return check();" >修改我的信息</button>

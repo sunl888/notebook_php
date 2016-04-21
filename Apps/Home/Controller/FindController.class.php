@@ -25,6 +25,7 @@ class FindController extends BaseController{
            $page = new \Think\Page($count,6);
            $page->setConfig('first', '第一页');
            $records = Ftime( $book->getAllRecords($page->firstRow , $page->listRows) );
+          
            //p($records);
            //拼用户图像
            $this->assign('uploads','UPLOADS/');

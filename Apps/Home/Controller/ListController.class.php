@@ -23,6 +23,7 @@ class ListController extends BaseController{
                 return $this->error('非法操作',__APP__.'/Find/index');
             }
             $findbook = Ftime( $book->getBookByBid($bid) );
+            $book->addviews($bid);
             //拼用户图像
             $this->assign('uploads','UPLOADS/');
             $this->assign('findbook',$findbook);

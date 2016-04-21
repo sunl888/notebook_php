@@ -47,7 +47,7 @@ class RegisterController  extends BaseController{
         $user->UpdateLastLoginIP($userID);//更新ip地址和时间
         $user->UpdateLastLoginTime($userID);
         //通过uid向usersinfo表中添加记录  并将上传的图片地址写入image字段
-        $userinfo->addImage($userID,$fileName);
+        $userinfo->addUserImage($userID,$fileName);
         
         if($userID){
             //return $this->redirect('Login/Index');

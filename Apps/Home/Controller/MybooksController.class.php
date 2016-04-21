@@ -53,11 +53,15 @@ class MybooksController extends BaseController{
      */
     public function isHidden($userAllBooks){
         $i = 0;
+       
         while($userAllBooks[$i]['id']){
-            if( !$userAllBooks[$i]['hidden'] ){
-                $userAllBooks[$i]['hidden'] = '仅自己可见';
+            
+            if( $userAllBooks[$i]['private'] == 1 ){
+                $userAllBooks[$i]['private'] = '仅自己可见';
+                
             }else{
-                $userAllBooks[$i]['hidden'] = '可共享的日记';
+                $userAllBooks[$i]['private'] = '可共享的日记';
+                
             }
             $i++;
         }

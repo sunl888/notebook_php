@@ -1,0 +1,27 @@
+[ 2016-04-21T20:21:29+08:00 ] ::1 /notebook_php/index.php/Mybooks/index.htm
+ERR: Think\Model:getBooksByUid方法不存在！
+
+[ 2016-04-21T20:36:02+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 1054:Champ 'b.preate' inconnu dans where clause
+ [ SQL语句 ] : SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.preate = 0 ORDER BY b.addtime desc LIMIT 0,6  
+
+[ 2016-04-21T20:36:05+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 1054:Champ 'b.preate' inconnu dans where clause
+ [ SQL语句 ] : SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.preate = 0 ORDER BY b.addtime desc LIMIT 0,6  
+
+[ 2016-04-21T21:04:49+08:00 ] ::1 /notebook_php/index.php/Write/write.htm
+ERR: 1048:Le champ 'private' ne peut être vide (null)
+ [ SQL语句 ] : INSERT INTO `notebook_book` (`mood`,`uid`,`weather`,`title`,`content`,`private`,`addtime`) VALUES ('高兴','1','晴天','年轮，我还在','<font  color=red>时隔多年</font>，那些欢声笑语，在年轮还可以找到，这里有着太多的故事和脚印，人生一路走来，酸甜苦辣尽在这个空间。
+
+  无意中打开QQ群，才发现还在那些个年轮群里，才想起要来这里看看，因为不常来导致密码都已忘记了，努力想了好久才想起来。
+
+  从一个懵懂的少女到一个6岁孩子的妈妈，笑容背后真心有着太多的泪水，婚姻也从一个甜密的初恋，步入到了平淡，现在更多的是亲情，是一种责任。生活是一本书，婚姻也需要经营，有些时候觉得自己一味的付出，却等不到自己的想要的结果时，更是身心疲备。还好，我还有这里，属于我真正安静的空间。',NULL,'1461243889')
+
+[ 2016-04-21T21:23:50+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE ( private=0,hidden=0 ) LIMIT 1  
+
+[ 2016-04-21T21:23:57+08:00 ] ::1 /notebook_php/index.php/Find/index.htm
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE ( private=0,hidden=0 ) LIMIT 1  
+

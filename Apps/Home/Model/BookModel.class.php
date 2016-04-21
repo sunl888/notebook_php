@@ -13,39 +13,51 @@ use Think\Model;
  *
  * @author 土豆
  */
-class BookModel extends Model{
+class BookModel extends Model
+{
     //对book表降序排序 取出前5条记录
-    public function getLastFiveRecords(){
+    public function getLastFiveRecords()
+    {
         $getRecords = $this->field('b.id , b.title , b.addtime , u.username')
-                ->alias('b')
-                ->join('right join __USERS__ as u on b.uid = u.id')
-                ->where(['b.hidden'=>1])
-                ->order('b.addtime desc')
-                ->limit(5)
-                ->select();
+            ->alias('b')
+            ->join('right join __USERS__ as u on b.uid = u.id')
+            ->where(['b.hidden' => 0,'b.private'=>0])
+            ->order('b.addtime desc')
+            ->limit(5)
+            ->select();
         return $getRecords;
-        }
-    public function book_count(){
-        return $this->where('hidden=1')->count();
     }
+
+    public function book_count()
+    {
+        return $this->where(['private'=>0,'hidden'=>0])->count();
+    }
+
     //分页
-    public function getAllRecords($limit , $offset){
-        return $this->field('b.id , b.title ,b.content , b.mood , b.weather , b.addtime , b.views , u.username , ui.image')
-                    ->alias('b')
-                    -> join('right join __USERS__ as u on u.id = b.uid')
-                    ->join('right join __USERSINFO__ as ui on u.id = ui.uid')
-                    ->where(['b.hidden'=>1])
-                    ->order('b.addtime desc')
-                    ->limit($limit.','.$offset)
-                    ->select();
-        //echo $this->getLastSql();die;
+    public function getAllRecords($limit, $offset)
+    {
+        return $this->field('b.id , b.title ,b.mood , b.weather , b.addtime , b.content, b.views , u.username,ui.image')
+            ->alias('b')
+            ->join('right join __USERS__ as u on u.id = b.uid')
+            ->join('right join __USERSINFO__ as ui on u.id=ui.uid')
+            ->where(['b.hidden' => 0,'b.private'=>0])
+            ->order('b.addtime desc')
+            ->limit($limit . ',' . $offset)
+            ->select();
     }
-    public function getBookByBid($bid){
+
+    public function addBook($data)
+    {   //p($data);
+        return $this->add(['mood' => $data['mood'], 'uid' => $data['uid'], 'weather' => $data['weather'], 'title' => $data['title'], 'content' => $data['content'], 'private' => $data['private'],'addtime'=>time()]);
+    }
+    
+     public function getBookByBid($bid){
+         
         return $this->field('b.id , b.title ,b.content , b.mood , b.weather , b.addtime , b.views , u.username , ui.image')
                     ->alias('b')
                     -> join('right join __USERS__ as u on u.id = b.uid')
                     ->join('right join __USERSINFO__ as ui on u.id = ui.uid')
-                    ->where(['b.hidden'=>1,'b.id'=>$bid])
+                    ->where(['b.hidden'=>0,'b.id'=>$bid])
                     ->limit(1)
                     ->select();
     }
@@ -55,4 +67,9 @@ class BookModel extends Model{
         return $this-> where(['uid'=>$uid])->limit($limit.','.$offset)->select();
     }
     
+    //浏览量
+    public function addviews($bid){
+        $views = $this->where(['id'=>$bid])->find();
+        return $this->where(['id'=>$bid])->save(['views'=> $views['views']+1]);
+    }
 }

@@ -32,7 +32,7 @@ class UserModel extends Model{
      */
     public function write($username,$password){
         //注册时间
-         return $this->add(['username'=>$username,'password'=>$password]);
+         return $this->add(['username'=>$username,'password'=>$password,'regtime'=>time()]);
     }
     /**
      * 1.更新最近登陆IP

@@ -52,8 +52,6 @@
                   <li><a href="#">你也可以和别人分享你的日记喔</a></li>
                   <li><a href="#">还等什么呢?</a></li>
                   <li><a href="#">赶紧开始你的日记之旅吧.</a></li>
-                  
-      <input name="checkbox" type="checkbox" checked="checked" />只有自己可见
               </ul>
             </div>
             <div class="hot"> 

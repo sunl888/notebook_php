@@ -16,6 +16,7 @@ class PassportModel{
      */
     public function hasUser($user){
         $userModel = D('User');
+        
         return $userModel->where(['username'=>$user])->count()>0;
     }
     /**

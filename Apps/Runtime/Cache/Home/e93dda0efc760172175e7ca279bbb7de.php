@@ -27,20 +27,19 @@
             </div>
         </div>
     </div>
-    
-    
+
 <div class="container">
     <div class="row-fluid show-grid">
         <div class="span8">
             <h4><span><?php echo ($username); ?> 的日记</span></h4>
             <?php if(is_array($userAllBooks)): foreach($userAllBooks as $key=>$vo): ?><div class="Diary-wrap">
                     <h5> 标题: <a href="<?php echo U('List/index',['id'=>$vo['id']]);?>"><?php echo ($vo['title']); ?></a>
-                        <small>[ <?php echo ($vo['hidden']); ?> ] </small>
+                        <small>[ <?php echo ($vo['private']); ?> ] </small>
                         <small>[天气:<?php echo ($vo['weather']); ?>] </small>
                         <small>[心情:<?php echo ($vo['mood']); ?>] </small>
                     </h5>
                     <div class="Diary-content">
-                        <p><?php echo ($vo['content']); ?></p>
+                        <p style="max-height: 70px;overflow:hidden;text-overflow:ellipsis;word-break:normal;"><?php echo ($vo['content']); ?></p>
                     </div>
                     <div class="bar"><?php echo ($vo['addtime']); ?> 
                         <small><?php echo intval($vo['views']);?>阅读</small>
