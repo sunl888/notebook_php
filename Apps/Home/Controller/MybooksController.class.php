@@ -38,7 +38,9 @@ class MybooksController extends BaseController{
         $page = new \Think\Page($book->where(['uid'=>$users['id']])->count(),6);
         $page->setConfig('first', '第一页');
         $userAllBooks = $this->isHidden( Ftime( $book->getBooksByUid( $page->firstRow , $page->listRows , $users['id']) ) );
+        
         $this->assign('page',$page);
+        
         $this->assign('userinfo',$userinfo);
         $this->assign('userImage',$userImage);
         $this->assign('userAllBooks',$userAllBooks);

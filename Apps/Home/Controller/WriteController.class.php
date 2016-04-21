@@ -17,10 +17,20 @@ class WriteController  extends BaseController{
     public function index(){
        
        if($this->isLogin()){
-           $book = D('Book');
-           
-           
            $this->display();
        }
+    }
+    public function addBook(){
+        $book = D('Book');
+        $mood = I('post.mood','','trim');
+        $weather = I('post.weather','','trim');
+        $title = I('post.title','','trim');
+        $content = I('post.content','','trim');
+        $hidden = I('post.hidden','','trim');
+        
+        p( $mood.$weather.$title.$content .$hidden);
+        //获取当前用户的id
+        $user = $book->getUserByUsername(session('userName'));
+         
     }
 }

@@ -12,7 +12,7 @@
         <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
         <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/notebook_php/Public/home/css/setting.css">
-		 <script src="/notebook_php/Public/home/js/register.js" language="javascript"></script>
+	<script src="/notebook_php/Public/home/js/register.js" language="javascript"></script>
         <title>云日记</title>
     </head>
     <body>
@@ -73,6 +73,11 @@
                         <div class="col-sm-9">
                           <textarea class="form-control" id="about" name="about" placeholder="这里随便输入一句你想说的话喔" rows="3"><?php echo ($about); ?></textarea>
                         </div> <br/><br/>
+                        
+                        <div class="control-group">
+      <label class="inline"><input name="checkbox" type="checkbox" checked="checked" />只有自己可见</label>
+    </div>
+                        
                         <!--submit-->
                         <button type="submit" class="btn btn-primary" onclick="return check();" >修改我的信息</button>
                 </div>

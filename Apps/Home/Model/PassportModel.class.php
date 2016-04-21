@@ -16,14 +16,7 @@ class PassportModel{
      */
     public function hasUser($user){
         $userModel = D('User');
-
-        $condition = array();
-        if(is_numeric($user)){//是id
-            $condition['id'] = $user;
-        }else{//使用户名
-            $condition['username'] = $user;
-        }
-        return $userModel->where($condition)->count()>0;
+        return $userModel->where(['username'=>$user])->count()>0;
     }
     /**
      * 登陆
