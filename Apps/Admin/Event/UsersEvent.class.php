@@ -72,10 +72,6 @@ class UsersEvent extends BaseEvent {
 			$this->ajaxReturn($data,'JSON');
 		}
 	}
-
-
-	}
-
 	public function delEvent($uid){
 		$id = $_GET['id'];
 		$mw = $_GET['mw'];

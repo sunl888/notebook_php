@@ -126,14 +126,14 @@ class TeacherController extends BaseController{
 	}
 
 
-	select() save()  delete() add()
+	/*select() save()  delete() add()
 
 	D('表名','Mpdel') 
 
 	D('表名')
 
 	D('表名')->select()
-	
+	*/
 	/**
 	*删除教师信息
 	*
