@@ -11,8 +11,8 @@ namespace Home\Controller;
 class LoginController extends BaseController{
     
     public function index(){
-        $this->display();
         
+        $this->display();
     }
     
     public function doLogin(){

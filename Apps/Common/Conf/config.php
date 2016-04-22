@@ -17,7 +17,7 @@ return array(
 	'DB_HOST' => 'localhost', // 主机名称
         'DB_NAME' => 'notebook',
 	'DB_USER' => 'root', // 数据库管理员用户名
-	'DB_PWD' => '', // 数据库管理员密码
+	'DB_PWD' => 'sunlong123', // 数据库管理员密码
 	'DB_PREFIX' => 'notebook_', // 数据库前缀
 
 		
