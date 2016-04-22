@@ -15,7 +15,7 @@ namespace Home\Controller;
  */
 class FindController extends BaseController{
     
-   public function Index(){
+   public function index(){
        
        if($this->isLogin()){
            $book = D('Book');

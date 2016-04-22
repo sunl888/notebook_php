@@ -10,7 +10,7 @@ namespace Home\Controller;
  */
 class RegisterController  extends BaseController{
     
-    public function Index(){
+    public function index(){
         $this->display();
     }
     public function doRegister(){
@@ -51,9 +51,9 @@ class RegisterController  extends BaseController{
         
         if($userID){
             //return $this->redirect('Login/Index');
-            return $this->success('注册成功,正在返回登陆界面...',__APP__.'/Login/Index');
+            return $this->success('注册成功,正在返回登陆界面...',__APP__.'/Login/index');
         }else{
-            return $this->error('注册失败.',__APP__.'/Register/Index');
+            return $this->error('注册失败.',__APP__.'/Register/index');
         } 
     }
 }

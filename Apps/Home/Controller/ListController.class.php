@@ -14,13 +14,13 @@ namespace Home\Controller;
  * @author Administrator
  */
 class ListController extends BaseController{
-    public function Index() {
+    public function index() {
         if($this->isLogin()){
             $book = D('Book');
             
             $bid = $_GET['id'];
             if(!isset($bid)){
-                return $this->error('非法操作',__APP__.'/Find/Index');
+                return $this->error('非法操作',__APP__.'/Find/index');
             }
             //增加浏览量
             $book->addviews($bid);

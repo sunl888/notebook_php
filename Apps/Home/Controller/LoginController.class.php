@@ -10,7 +10,7 @@ namespace Home\Controller;
 
 class LoginController extends BaseController{
     
-    public function Index(){
+    public function index(){
         $this->display();
         
     }
@@ -34,7 +34,7 @@ class LoginController extends BaseController{
             
             Session('userName',$res['username']);//在服务器端保存session
           //$this->success('登陆成功!',__APP__.'/Index/index');
-            return $this->redirect('Index/Index');//重定向到Index控制器
+            return $this->redirect('Index/index');//重定向到Index控制器
         }else{
             return $this->error('登陆失败! '.$passport->getError());
         }
