@@ -14,15 +14,15 @@
                 <a href="#" class="brand">云日记</a>
                 <div class="nav-collapse">
                     <ul class="nav nav-pills">
-                        <li><a href="{:U('Index/index')}" >首页</a></li>
-                        <li><a href="{:U('Find/index')}">发现</a></li>
-                        <li><a href="{:U('Write/index')}">写日记</a></li>
+                        <li><a href="{:U('Index/Index')}" >首页</a></li>
+                        <li><a href="{:U('Find/Index')}">发现</a></li>
+                        <li><a href="{:U('Write/Index')}">写日记</a></li>
                     </ul>
                 </div>
                 <ul class="nav navbar-nav" style="float:right;">
-                    <li><a href="{:U('Register/index')}">注册</a></li>
-                     <li><a href="{:U('Setting/index')}">设置</a></li>
-                     <li><a href="{:U('Logout/index')}">退出</a></li>
+                    <li><a href="{:U('Register/Index')}">注册</a></li>
+                     <li><a href="{:U('Setting/Index')}">设置</a></li>
+                     <li><a href="{:U('Logout/Index')}">退出</a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +38,7 @@
                       <img src="__ROOT__/{$uploads}{$vo.image}" alt="用户图像" class="img-rounded" />
                   </div>
                     <div class="Diary-right"><h5> 
-                      <a href="{:U('List/index',['id'=>$vo['id']])}"> {$vo.username} 的日记</a>
+                      <a href="{:U('List/Index',['id'=>$vo['id']])}"> {$vo.username} 的日记</a>
                         <small>[天气:{$vo.weather}] </small>
                         <small>[心情:{$vo.mood}] </small>
                       </h5>

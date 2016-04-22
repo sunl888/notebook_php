@@ -1,15 +1,16 @@
 <?php
+namespace Home\Controller;
 /**
  * Created by PhpStorm.
  * User: 孙龙
  * Date: 2016/4/7
  * Time: 20:06
  */
-namespace Home\Controller;
+
 
 class LoginController extends BaseController{
     
-    public function index(){
+    public function Index(){
         $this->display();
         
     }

@@ -15,7 +15,7 @@ namespace Home\Controller;
  */
 class FindController extends BaseController{
     
-   public function index(){
+   public function Index(){
        
        if($this->isLogin()){
            $book = D('Book');
@@ -26,9 +26,8 @@ class FindController extends BaseController{
            $page->setConfig('first', '第一页');
            $records = Ftime( $book->getAllRecords($page->firstRow , $page->listRows) );
           
-           //p($records);
            //拼用户图像
-           $this->assign('uploads','UPLOADS/');
+           $this->assign('uploads','Uploads/');
            //分页
            $this->assign('page',$page);
            

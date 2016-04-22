@@ -4,6 +4,7 @@ namespace Home\Controller;
 use Think\Controller;
 
 class BaseController extends Controller {
+    //测试是否登陆过
     public function isLogin()
     {
         $value = Session('userName');

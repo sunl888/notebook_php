@@ -4,7 +4,7 @@
 namespace Home\Controller;
 
 class WriteController  extends BaseController{
-    public function index(){
+    public function Index(){
        
        if($this->isLogin()){
            $book = D('book');
@@ -51,14 +51,12 @@ class WriteController  extends BaseController{
 
           //  $con[] =array( 'tittle'=> $data['mood'],'content'=>)
             if($book -> addBook($data)){
-                $this ->success("日记写好啦！","../Index/index");//跳转到查看笔记
+                $this ->success("日记写好啦！","../Index/Index");//跳转到查看笔记
             }else{
                 $this ->error("发表日记失败！请联系管理员！QQ:2013855675");
             }
         }else{
-            echo 123;
+            $this ->error("程序出错!!");
         }
-
-
     }
 }

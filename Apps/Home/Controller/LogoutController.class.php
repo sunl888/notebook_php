@@ -15,9 +15,9 @@ namespace Home\Controller;
  */
 class LogoutController extends BaseController{
     
-    public function index(){
+    public function Index(){
         session('userName',null);//清楚session
-        $this->redirect('Login/index');
+        $this->redirect('Login/Index');
     }
     
 }

@@ -15,7 +15,7 @@ namespace Home\Controller;
  */
 class MybooksController extends BaseController{
     
-    public function index(){
+    public function Index(){
         $book = D('Book');
         $users = D('User');
         $usersinfo = D('UserInfo');
