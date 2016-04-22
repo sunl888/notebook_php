@@ -50,10 +50,10 @@ class RegisterController  extends BaseController{
         $userinfo->addUserImage($userID,$fileName);
         
         if($userID){
-            //return $this->redirect('Login/Index');
-            return $this->success('注册成功,正在返回登陆界面...',__APP__.'/Login/index');
+            //return $this->redirect('Login/index');
+            return $this->success('注册成功,正在返回登陆界面...',U('Login/index'));
         }else{
-            return $this->error('注册失败.',__APP__.'/Register/index');
+            return $this->error('注册失败.',U('Register/index'));
         } 
     }
 }

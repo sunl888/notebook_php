@@ -1,7 +1,7 @@
 ﻿<?php
 return array(
 	//'配置项'=>'配置值'
-    'URL_MODEL'=>'0',
+         'URL_MODEL'=>0,
 	// 设置禁止访问的模块列表
 	'MODULE_DENY_LIST'      =>  array('Common','Runtime','Api'),
 	// 更改默认的模型层名称为Logic

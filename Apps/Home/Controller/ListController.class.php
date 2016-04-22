@@ -20,7 +20,7 @@ class ListController extends BaseController{
             
             $bid = $_GET['id'];
             if(!isset($bid)){
-                return $this->error('非法操作',__APP__.'/Find/index');
+                return $this->error('非法操作' , U('Find/index') );
             }
             //增加浏览量
             $book->addviews($bid);

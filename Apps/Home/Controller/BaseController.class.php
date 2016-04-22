@@ -4,9 +4,11 @@ namespace Home\Controller;
 use Think\Controller;
 
 class BaseController extends Controller {
+    
     //测试是否登陆过
     public function isLogin()
     {
+        //echo U('Login/index');die;
         $value = Session('userName');
         
         if(!isset($value)){

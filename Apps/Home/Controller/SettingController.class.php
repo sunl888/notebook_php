@@ -59,9 +59,9 @@ class SettingController extends BaseController{
         $isSave = $usersinfo->write($qq,$phone,$address,$about, $usersinfoID['id'] ,$fileName);
         
         if($isSave){
-            $this->success('帐户信息修改成功.正在返回首页',__APP__.'/Index/index');
+            $this->success('帐户信息修改成功.正在返回首页' , U('Index/index') );
         }else{
-            $this->error('意外错误,信息修改失败,请稍候再试.',__APP__.'/Setting/index');
+            $this->error('意外错误,信息修改失败,请稍候再试.' , U('Setting/index') );
         }
         return true;
     }

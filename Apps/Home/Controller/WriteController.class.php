@@ -49,9 +49,8 @@ class WriteController  extends BaseController{
             $userinfo = $users ->getUserByUsername($username);
             $data['uid'] = $userinfo['id'];
 
-          //  $con[] =array( 'tittle'=> $data['mood'],'content'=>)
             if($book -> addBook($data)){
-                $this ->success("日记写好啦！","../Index/index");//跳转到查看笔记
+                $this ->success("日记写好啦！" , U('Mybooks/index') );//跳转到查看笔记
             }else{
                 $this ->error("发表日记失败！请联系管理员！QQ:2013855675");
             }
