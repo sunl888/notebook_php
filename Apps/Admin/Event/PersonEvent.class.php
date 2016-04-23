@@ -30,17 +30,37 @@ class PersonEvent extends BaseEvent {
 		$user = $User->find($id);
 		if (empty($user)) $this->error("用户不存在!");
 
-		//上传用户头像
+		/*//上传用户头像
 		$Upload = new \Libs\Util\Upload();
 		$data['photo'] = $user['photo'];
+                //p($data['photo']);
 		//p($_FILES);
 		if ($_FILES['photo']['name'] != "") {
 			$fileInfo = $Upload->upload ( 'photo', true );
 			//删除旧头像
 			unlink($this->uploadPath . $user['photo']);
 			$data['photo'] = $fileInfo;
-		}
-
+		}else{
+                    $fileInfo = $Upload->upload ( 'photo', true );
+                    $data['photo'] = $fileInfo;
+                }
+                */
+                
+                //接收头像
+        $data['photo'] = $user['photo'];
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->exts      =     array('jpg','gif','bmp','png','jpeg');// 设置附件上传类型
+        $upload->rootPath  =      './Public/admin/upload/'; // 设置附件上传根目录
+        $upload->subName   =  array('date', 'Y/m/d');
+        // 上传单个文件 
+        $info   =   $upload->upload ( 'photo', true );
+        if(!$info) {// 上传错误提示错误信息
+            $this->error($upload->getError());
+        }else{// 上传成功 获取上传文件信息
+             $data['photo'] = $info['savepath'].$info['savename'];
+        }
+        
+        
 		if ($User->where("id=".$id)->save($data) !== false){
 			//更新session
 			$session = session($sessionName);

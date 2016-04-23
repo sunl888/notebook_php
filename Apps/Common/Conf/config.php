@@ -1,7 +1,8 @@
 ﻿<?php
 return array(
 	//'配置项'=>'配置值'
-         'URL_MODEL'=>0,
+         //'URL_MODEL'=>0,
+         'URL_MODEL'=>1,
 	// 设置禁止访问的模块列表
 	'MODULE_DENY_LIST'      =>  array('Common','Runtime','Api'),
 	// 更改默认的模型层名称为Logic
@@ -17,7 +18,7 @@ return array(
 	'DB_HOST' => 'localhost', // 主机名称
         'DB_NAME' => 'notebook',
 	'DB_USER' => 'root', // 数据库管理员用户名
-	'DB_PWD' => 'sunlong123', // 数据库管理员密码
+	'DB_PWD' => 'root', // 数据库管理员密码
 	'DB_PREFIX' => 'notebook_', // 数据库前缀
 
 		

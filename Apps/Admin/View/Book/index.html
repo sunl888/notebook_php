@@ -81,24 +81,22 @@
                             </thead>
                             <tbody>
                                 <foreach name="bookArr" item = "book" key = "k">
-                                    <tr>
+                                    <tr >
                                         <td>{$k+1}</td>
                                         <td>{$book.user_name}</td>
-                                        <td>{$book.title}</td>
-                                        <td>{$book.content}</td>
+                                        <td>{$book.title|subtitle=10,0}</td>
+                                        <td >{$book.content|subtitle=30,0}</td>
                                         <td>{$book.addtime|date='Y/m/d h:i:s',###}</td>
-                                        <td>{$book.views}</td>
-
-                                
+                                        <td>{$book.views}</td> 
                                         <td class="align-center">
                                             <a href="__APP__/Book/look/id/{$book.id}/mw/{$book.mw}'">查看</a> | 
                                                 <if condition="$book.hidden neq 1" >
 
-                                                    <a href="javascript:void(0);" onclick="return confirm('__APP__/Book/audit/id/{$book.id}/mw/{$book.mw}','确定审核?');">未审核</a> |
+                                                    <a href="__APP__/Book/audit/id/{$book.id}/mw/{$book.mw}">已审核</a> |
                                                 <else />
-                                                    <a href="javascript:void(0);" onclick="return confirm('__APP__/Book/audit/id/{$book.id}/mw/{$book.mw}','确定审核?');">已审核</a> |
+                                                    <a href="__APP__/Book/audit/id/{$book.id}/mw/{$book.mw}">未审核</a> |
                                                 </if>    
-                                            <a href="javascript:void(0);" onclick="return confirm('__APP__/Book/del/id/{$book.id}/mw/{$book.mw}','确定删除?');">删除</a>
+                                            <a href="__APP__/Book/del/id/{$book.id}/mw/{$book.mw}">删除</a>
                                         
                            
 

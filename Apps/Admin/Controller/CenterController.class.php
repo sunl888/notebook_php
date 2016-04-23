@@ -21,8 +21,9 @@ class CenterController extends BaseController {
 		$y = date('y',$time);
 		$m = date('m',$time);
         $visitCount = $Visit->getVisitCount($y,$m);
-        //p($visitCount);
-		$Mysql = D ('Mysql');
+
+	//$Mysql = D('Mysql');
+        //
     	//获取服务器配置信息
     	$serverinfo = array(
     			'os' => $_SERVER["SERVER_SOFTWARE"], //获取服务器标识的字串
@@ -34,8 +35,8 @@ class CenterController extends BaseController {
     			'port' => $_SERVER['SERVER_PORT'], //获取服务器Web端口
     			'max_upload' => ini_get("file_uploads") ? ini_get("upload_max_filesize") : "Disabled", //最大上传
     			'max_ex_time' => ini_get("max_execution_time")."秒", //脚本最大执行时间
-    			'mysql_version' => $Mysql->getMysqlVersion(), //获取服务器MySQL版本
-    			'mysql_size' => $Mysql->getMysqlSize(), //获取服务器Mysql已使用大小
+    			//'mysql_version' => $Mysql->getMysqlVersion(), //获取服务器MySQL版本
+    			//'mysql_size' => $Mysql->getMysqlSize(), //获取服务器Mysql已使用大小
     	);
 
     	$this->assign('y',$y);

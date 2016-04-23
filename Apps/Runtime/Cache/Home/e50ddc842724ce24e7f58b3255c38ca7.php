@@ -29,8 +29,8 @@
                     <input type="password" name="password"  placeholder="输入密码开启你的日记之旅吧"/>
                 </div>
                 <div class="zh">
-                    <a href="#" style="margin-left:30px;">找回密码</a>
-                       <a href="<?php echo U('Register/index');?>" style=" float:right;margin-right:35px;">注册</a>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin=291000327&site=%BA%EF%B5%BA%C2%DB%CC%B3&menu=yes"  style="margin-left:30px;">联系我们</a>
+                       <a href="<?php echo U('Register/index');?>" style=" float:right;margin-right:35px;">点击注册</a>
                    </div>
                 <div class="dl">
                     <input type="submit" onclick="return check();" value="登录"/>

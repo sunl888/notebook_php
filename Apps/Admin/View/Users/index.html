@@ -85,10 +85,17 @@
                                     <tr>
                                         <td>{$k+1}</td>
                                         <td>{$users.username}</td>
-                                        <td>{$users.lastloginIP}</td>
-                                        <td>{$users.lastloginTime|date='Y/m/d h:i:s',###}</td>
+                                        <td>{$users.lastloginip}</td>
+                                        <td>{$users.lastlogintime|date='Y/m/d h:i:s',###}</td>
                                         <td>{$users.email}</td>
-                                        <td>{$users.status}</td>
+                                        <td>                                        
+                                            <if condition="$users.status neq 0" >
+                                                   正常
+                                                <else />
+                                                    禁用
+                                                </if>
+                                            
+                                        </td>
                                         <td>{$users.remark}</td>
                                         <td class="align-center">
                                             <a href="__APP__/Users/edit/id/{$users.id}/mw/{$users.mw}">修改</a>  |

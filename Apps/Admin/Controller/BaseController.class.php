@@ -51,9 +51,9 @@ class BaseController extends Controller {
 		$Session = M ('Session');
 		$ip = get_client_ip();
 		$sessRes = $Session->where("ip='$ip'")->find();
-		if (empty($sessRes)) $this->redirect('/Login');
+		if (empty($sessRes)) $this->redirect('Login/index');
 		$sessionName = $sessRes['name'];
-		if (is_null(session($sessionName))) $this->redirect('/Login');
+		if (is_null(session($sessionName))) $this->redirect('Login/index');
 		$this->user = session($sessionName);
 		return true;
 	}
@@ -68,7 +68,7 @@ class BaseController extends Controller {
 			$roleid = $this->user['role_id'];
 			$Role = M ('Role');
 			$role = $Role->find($roleid);
-			if (empty($role)) $this->error('系统错误',__APP__.'/Login');
+			if (empty($role)) $this->error('系统错误',U('Login/index'));
 			if ($role['parentid'] == 0) {
 				$this->perm = 'Administrator';
 				session($permSessionName,$this->perm);

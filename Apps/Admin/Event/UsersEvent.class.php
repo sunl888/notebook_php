@@ -59,10 +59,10 @@ class UsersEvent extends BaseEvent {
 					$data['msg'] = "添加管理用户失败!";
 				}
 				//写入日志
-				$Operationlog = D ('Operationlog');
-				$info = "提示语：".$data['msg']." <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：AJAX";
-				$get = __SELF__;
-				$Operationlog->write($uid,$data['status'],$info,$get);
+//				$Operationlog = D ('Operationlog');
+//				$info = "提示语：".$data['msg']." <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：AJAX";
+//				$get = __SELF__;
+//				$Operationlog->write($uid,$data['status'],$info,$get);
 
 				$this->ajaxReturn($data,'JSON');
 			}
@@ -84,10 +84,10 @@ class UsersEvent extends BaseEvent {
 		if ($res['photo'] !== 'photo/default.jpg') unlink ( $this->uploadPath . $res ['photo'] );
 		if ($Users->delete($id) !== false){
 			//写入日志
-			$Operationlog = D ('Operationlog');
-			$info = "提示语：删除管理用户成功 <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：GET";
-			$get = __SELF__;
-			$Operationlog->write($uid,$data['status'],$info,$get);
+//			$Operationlog = D ('Operationlog');
+//			$info = "提示语：删除管理用户成功 <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：GET";
+//			$get = __SELF__;
+//			$Operationlog->write($uid,$data['status'],$info,$get);
 
 			$this->success("删除管理用户成功!");
 		} else{ 

@@ -88,10 +88,10 @@ class LoginController extends Controller {
 		$password = $_POST['password'];
 		$verify = $_POST['verify'];
 		$ip = get_client_ip();
-		if (!$this->checkVerify($verify)) $this->error("验证码错误!",__APP__.'/Login');
+		if (!$this->checkVerify($verify)) $this->error("验证码错误!",U('Login/index'));
 		$user = $User->login($username,$password);
 		//p($User->getLastSql());
-		if (empty($user)) $this->error("账号密码不正确或者用户不存在!",__APP__.'/Login');
+		if (empty($user)) $this->error("账号密码不正确或者用户不存在!",U('Login/index'));
 		//判断当前用户是否被禁用
 		if ($user['status'] == 0) $this->error("该用户已被禁用,请联系管理员设置!");
 		//判断当前用户所属角色状态
@@ -129,7 +129,7 @@ class LoginController extends Controller {
 		
 
 		// 页面重定向
-		$this->redirect ('/Index');
+		$this->redirect ('Index/index');
 	}
 		
 }

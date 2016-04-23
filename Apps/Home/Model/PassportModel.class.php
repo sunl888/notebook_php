@@ -30,10 +30,18 @@ class PassportModel{
         $user = D('User');
         
         $account = $user->getUserByUsername($username);
+        
         if($account['password'] === $password){
+            //判断账号是否被封
+            if( $account['status'] == 0 ){
+                $this->error = '您的账号已被封,请联系管理员.';
+                return false;
+            }
             //更新最后登陆IP和Time
             $user->UpdateLastLoginIP($account['id']);//更新最近登陆IP
             $user->UpdateLastLoginTime($account['id']);//更新最近登陆时间戳
+            
+            
             return $account;
         }else{
             $this->error = '用户名或密码错误.';

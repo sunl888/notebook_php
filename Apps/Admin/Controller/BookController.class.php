@@ -23,9 +23,10 @@ class BookController extends BaseController {
 	$Page = new \Think\Page ( $count, 15 );
 	$show = $Page->show ();
 	
-	$bookArr = $book->where ( $where )->limit ( $Page->firstRow . ',' . $Page->listRows )->select();
+	$bookArr = $book->where ( $where )->order('addtime desc')->limit ( $Page->firstRow . ',' . $Page->listRows )->select();
 
 	foreach ($bookArr as $key=>$val){
+                $bookArr[$key]['views'] = intval( $bookArr[$key]['views'] );
 		$bookArr[$key]['mw'] = passport_encrypt($val['id']);
 		$uid = $bookArr[$key]['uid'];//取出book表uid
 		$user_name = $Users -> where("id = $uid")->find();//根据uid去获取users表用户名称 getField();
@@ -41,6 +42,7 @@ class BookController extends BaseController {
 			$button[$key] = "0";
 		}
 	}
+        
 	$this->assign('bookArr',$bookArr);
 	$this->assign('button',$button);
 	$this->assign('page',$show);
@@ -62,10 +64,10 @@ class BookController extends BaseController {
 		if ($res['photo'] !== 'photo/default.jpg') unlink ( $this->uploadPath . $res ['photo'] );
 		if ($book->delete($id) !== false){
 			//写入日志
-			$Operationlog = D ('Operationlog');
-			$info = "提示语：删除笔记成功 <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：GET";
-			$get = __SELF__;
-			$Operationlog->write($uid,$data['status'],$info,$get);
+			//$Operationlog = D ('Operationlog');
+			//$info = "提示语：删除笔记成功 <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：GET";
+			//$get = __SELF__;
+			//$Operationlog->write($uid,$data['status'],$info,$get);
 			$this->success("删除笔记成功!");
 		} else{ 
 			$this->error("删除笔记失败!");
@@ -92,10 +94,10 @@ class BookController extends BaseController {
 
 		if($res['hidden'] == 1){
 			$data['hidden'] = 0;
-			$msg = "取消审核!";
+			$msg = "审核成功!";
 		}else if($data['hidden'] == 0){
 			$data['hidden'] = 1;
-			$msg = "审核成功!";
+                        $msg = "取消审核!";
 		}
 
 		if($Book-> where($where)->setField($data) == false){

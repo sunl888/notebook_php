@@ -27,19 +27,21 @@ class UsersController extends BaseController {
 		$Page = new \Think\Page ( $count, 15 );
 		$show = $Page->show ();
 		
-		$usersArr = $users->where ( $where )->limit ( $Page->firstRow . ',' . $Page->listRows )->select();
+		$usersArr = $users->where ( $where  )->order('lastloginTime desc')->limit ( $Page->firstRow . ',' . $Page->listRows )->select();
 		//$users->where("id = 1")->limit(0,10)->order("addrime desc")->select();
 		//dump($userArr);die;	
 		// /echo $users->getlastsql();die;
 		//select id,name from user where id = 1 limit(0,10) order by addtime desc
 		//
 		//$users->select();
-
+//p($usersArr);
 		foreach ($usersArr as $key=>$val){
 			$usersArr[$key]['mw'] = passport_encrypt($val['id']);
+                        $usersArr[$key]['lastloginip'] = long2ip( $usersArr[$key]['lastloginip'] );
 		}
-
-
+                
+                
+                
 		$this->assign('usersArr',$usersArr);
 		$this->assign('page',$show);
 		$this->display();
@@ -63,6 +65,11 @@ class UsersController extends BaseController {
 			$data['status'] = 0;
 			$data['msg'] = "两次密码不一致";
 			$this->error($data['msg'],'');
+		}
+                if ($_POST['password']=="default") {
+			$u['password'] = $user['password'];
+		} else {
+			$u['password'] = md5($_POST['password']);
 		}
 
 		if ($_POST['password']!==$_POST['truepassword']) {

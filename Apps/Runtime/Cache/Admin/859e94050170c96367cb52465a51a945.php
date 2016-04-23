@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>e8后台管理系统</title>
+    <title>云日记后台管理系统</title>
     
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="/notebook_php/Public/e8admin/default/lib/bootstrap/bootstrap.min.css">
