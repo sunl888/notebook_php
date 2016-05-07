@@ -14,4 +14,5 @@
 
 
 
-htmlentities
+前台网址: note.3twd.cn
+后台网址:note.3twd.cn/admin.php

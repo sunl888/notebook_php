@@ -5,13 +5,16 @@
     <title>云日记</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="云日记,日记本,记事本,写日记,E8工作室">
+    <meta name="description" content="我们坚信每个人的生活都有一些小时光值得被记录，希望通过云日记网站能唤起人们用文字记录生活的这种被遗忘很久的习惯。">
+
     <link rel="stylesheet" type="text/css" href="/notebook_php/Public/home/css/css.css" />
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a href="#" class="brand">云日记</a>
+                <a href="<?php echo U('Index/index');?>" class="brand">云日记</a>
                 <div class="nav-collapse">
                     <ul class="nav nav-pills">
                         <li><a href="<?php echo U('Index/index');?>" >首页</a></li>

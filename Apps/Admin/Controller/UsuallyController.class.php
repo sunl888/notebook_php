@@ -87,10 +87,10 @@ class UsuallyController extends BaseController {
 		$data['msg'] = "共添加了".$successnum."条常用操作:)";
 
 		//写入日志
-		$Operationlog = D ('Operationlog');
-		$info = "提示语：".$data['msg']." <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：AJAX";
-		$get = __SELF__;
-		$Operationlog->write($this->user['id'],1,$info,$get);
+//		$Operationlog = D ('Operationlog');
+//		$info = "提示语：".$data['msg']." <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：AJAX";
+//		$get = __SELF__;
+//		$Operationlog->write($this->user['id'],1,$info,$get);
 
 		$this->ajaxReturn($data,'JSON');
 	}

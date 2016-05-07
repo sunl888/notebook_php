@@ -25,9 +25,9 @@ class BookModel extends Model
             ->order('b.addtime desc')
             ->limit(5)
             ->select();
+        //echo $this->getLastSql();die;
         return $getRecords;
     }
-    
     /**
      * 
      * 获取所有可共享的日记总条数
@@ -47,7 +47,9 @@ class BookModel extends Model
      */
     public function getAllRecords($limit, $offset)
     {
-        return $this->field('b.id , b.title ,b.mood , b.weather , b.addtime , b.content, b.views , u.username,ui.image')
+        //echo 'limit->'.$limit."<br/>".'offset->'.$offset;
+        
+        $allRecords = $this->field('b.id , b.title ,b.mood , b.weather , b.addtime , b.content, b.views , u.username,ui.image')
             ->alias('b')
             ->join('right join __USERS__ as u on u.id = b.uid')
             ->join('right join __USERSINFO__ as ui on u.id=ui.uid')
@@ -55,10 +57,12 @@ class BookModel extends Model
             ->order('b.addtime desc')
             ->limit($limit . ',' . $offset)
             ->select();
+        //echo $this->getLastSql();//die;
+        return $allRecords;
     }
 
     public function addBook($data)
-    {   //p($data);
+    {   
         return $this->add(['mood' => $data['mood'], 'uid' => $data['uid'], 'weather' => $data['weather'], 'title' => $data['title'], 'content' => $data['content'], 'private' => $data['private'],'addtime'=>time()]);
     }
     /**

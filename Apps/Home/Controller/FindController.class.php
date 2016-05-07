@@ -23,7 +23,9 @@ class FindController extends BaseController{
            $count = $book->book_count();
            
            $page = new \Think\Page($count,6);
+           //p($page);
            $page->setConfig('first', '第一页');
+           echo $limit."<br/>".$offset;
            $records = Ftime( $book->getAllRecords($page->firstRow , $page->listRows) );
           
            //拼用户图像

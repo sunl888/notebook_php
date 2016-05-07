@@ -111,12 +111,8 @@ class UsersController extends BaseController {
 		$this->display();
 	
 	}
-
-
-
 	public function del(){
 		$Users = D('Users');
-		//$Users->del($this->users['id']);    //不知道有啥用
 		$id = $_GET['id'];
 		$mw = $_GET['mw'];
 		
@@ -129,10 +125,10 @@ class UsersController extends BaseController {
 		if ($res['photo'] !== 'photo/default.jpg') unlink ( $this->uploadPath . $res ['photo'] );
 		if ($Users->delete($id) !== false){
 			//写入日志
-			$Operationlog = D ('Operationlog');
-			$info = "提示语：删除用户成功 <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：GET";
-			$get = __SELF__;
-			$Operationlog->write($uid,$data['status'],$info,$get);
+//			$Operationlog = D ('Operationlog');
+//			$info = "提示语：删除用户成功 <br />模块：".MODULE_NAME.",控制器：".CONTROLLER_NAME.",方法：".ACTION_NAME." <br />请求方式：GET";
+//			$get = __SELF__;
+//			$Operationlog->write($uid,$data['status'],$info,$get);
 			$this->success("删除用户成功!");
 		} else{ 
 			$this->error("删除用户失败!");

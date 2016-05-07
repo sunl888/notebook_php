@@ -1,8 +1,8 @@
 ﻿<?php
 return array(
 	//'配置项'=>'配置值'
-         //'URL_MODEL'=>0,
-         'URL_MODEL'=>1,
+         'URL_MODEL'=>0,
+         //'URL_MODEL'=>1,
 	// 设置禁止访问的模块列表
 	'MODULE_DENY_LIST'      =>  array('Common','Runtime','Api'),
 	// 更改默认的模型层名称为Logic
@@ -25,6 +25,6 @@ return array(
 	'TOKEN_ON' => False, // 是否开启令牌验证 默认关闭
 	'TOKEN_NAME' => '__hash__', // 令牌验证的表单隐藏字段名称，默认为__hash__
 	'TOKEN_TYPE' => 'md5', // 令牌哈希验证规则 默认为MD5
-	'URL_HTML_SUFFIX' => 'htm|html|shtml|xml'  // 配置网站伪静态后缀 为空支持所有后缀
+	'URL_HTML_SUFFIX' => 'html|htm|shtml|xml'  // 配置网站伪静态后缀 为空支持所有后缀
 	
 );

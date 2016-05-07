@@ -1,0 +1,345 @@
+[ 2016-05-07T08:36:49+08:00 ] 127.0.0.1 /notebook_php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+
+[ 2016-05-07T08:36:50+08:00 ] 127.0.0.1 /notebook_php/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.346019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.346019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.829048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.829048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2016-05-07T08:37:01+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_users` [ RunTime:0.0970s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_users` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `notebook_users` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `notebook_users` SET `lastloginIP`='0' WHERE ( id = 1 ) [ RunTime:0.0290s ]
+SQL: UPDATE `notebook_users` SET `lastloginTime`='1462581421' WHERE ( id = 1 ) [ RunTime:0.0020s ]
+
+[ 2016-05-07T08:37:01+08:00 ] ::1 /notebook_php/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0210s ]
+SQL: SELECT b.id,b.title,b.addtime,u.username FROM notebook_book b right join notebook_users as u on b.uid = u.id  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 5   [ RunTime:0.0000s ]
+
+[ 2016-05-07T08:37:17+08:00 ] ::1 /notebook_php/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0030s ]
+SQL: SELECT b.id,b.title,b.addtime,u.username FROM notebook_book b right join notebook_users as u on b.uid = u.id  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 5   [ RunTime:0.0000s ]
+
+[ 2016-05-07T08:44:37+08:00 ] ::1 /notebook_php/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT b.id,b.title,b.addtime,u.username FROM notebook_book b right join notebook_users as u on b.uid = u.id  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 5   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 5 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:44:39+08:00 ] ::1 /notebook_php/index.php/Find/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 0,6   [ RunTime:0.0360s ]
+
+[ 2016-05-07T08:45:16+08:00 ] ::1 /notebook_php/index.php/Find/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 0,6   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-05-07T08:45:21+08:00 ] ::1 /notebook_php/index.php/Find/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 6,6   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 6 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-07T08:45:44+08:00 ] ::1 /notebook_php/index.php/Find/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 12,6   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 5 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-07T08:53:40+08:00 ] ::1 /notebook_php/index.php/Find/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 12,6   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:54:01+08:00 ] ::1 /notebook_php/index.php/Find/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 12,6   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:54:03+08:00 ] ::1 /notebook_php/index.php/Find/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_book` WHERE `private` = 0 AND `hidden` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: limit E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+NOTIC: [8] Undefined variable: offset E:\wamp\www\notebook_php\Apps\Home\Controller\FindController.class.php 第 28 行.
+SQL: SELECT b.id,b.title,b.mood,b.weather,b.addtime,b.content,b.views,u.username,ui.image FROM notebook_book b right join notebook_users as u on u.id = b.uid right join notebook_usersinfo as ui on u.id=ui.uid  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 0,6   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:54:04+08:00 ] ::1 /notebook_php/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0050s ]
+SQL: SELECT b.id,b.title,b.addtime,u.username FROM notebook_book b right join notebook_users as u on b.uid = u.id  WHERE b.hidden = 0 AND b.private = 0 ORDER BY b.addtime desc LIMIT 5   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 E:\wamp\www\notebook_php\Apps\Common\Common\function.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:54:07+08:00 ] ::1 /notebook_php/index.php/Write/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_book` [ RunTime:0.0050s ]
+NOTIC: [4096] Object of class Home\Model\BookModel could not be converted to string E:\wamp\www\notebook_php\Apps\Home\Controller\WriteController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:54:09+08:00 ] ::1 /notebook_php/index.php/Logout/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-07T08:54:09+08:00 ] ::1 /notebook_php/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-07T08:54:11+08:00 ] ::1 /notebook_php/index.php/Login/doLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `notebook_users` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notebook_users` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+

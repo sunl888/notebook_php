@@ -6,6 +6,6 @@
 	define('BIND_MODULE', 'Home'); // 绑定Home模块到当前入口文件
 	define( 'APP_PATH','./Apps/' ); //项目路径
 	//加载框架入口文件
-    define('UPLOAD_PATH', 'Uploads/');
+        define('UPLOAD_PATH', 'Uploads/');
 	require ( THINK_PATH . 'ThinkPHP.php');
 ?>
